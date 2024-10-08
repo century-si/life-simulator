@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "ts-node": "^10.9.2"
+  },
+  "name": "life-simulator",
+  "version": "1.0.0",
+  "main": "app.ts",
+  "devDependencies": {
+    "electron": "^32.1.2",
+    "electron-packager": "^17.1.2",
+    "nodemon": "^3.1.7"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && electron ./dist/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pack": "npm run build && electron-packager ./ --out=./dist --overwrite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "description": "",
+  "homepage": "./"
+}
